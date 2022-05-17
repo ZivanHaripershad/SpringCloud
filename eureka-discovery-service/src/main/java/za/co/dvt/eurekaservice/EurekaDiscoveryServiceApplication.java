@@ -1,4 +1,4 @@
-package za.co.dvt.eurekaclient;
+package za.co.dvt.eurekaservice;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @SpringBootApplication
 @RestController
-public class EurekaDiscoveryClientApplication {
+public class EurekaDiscoveryServiceApplication {
 
 	@Value("${service.instance.name}")
 	private String instance;
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaDiscoveryClientApplication.class, args);
+		SpringApplication.run(EurekaDiscoveryServiceApplication.class, args);
 	}
 
 	@RequestMapping("/")

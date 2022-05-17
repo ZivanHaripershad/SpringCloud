@@ -5,8 +5,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>eureka-discovery-server</module>
-		<module>eureka-discovery-client</module>
-	</modules>
+		<module>eureka-discovery-service</module>
+        <module>eureka-discovery-client</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
